@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.vedan.olxforvjti.NewBookActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:gravity="start"
+        android:paddingRight="10dp">
+
+        <ImageView
+            android:clickable="true"
+            android:id="@+id/book_img"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:src="@drawable/bookdesk3"
+            android:adjustViewBounds="true"/>
+
+        <TextView
+            android:id="@+id/book_t1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/book_img"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@+id/book_img"
+            android:text="Book Deskcription" />
+
+        <EditText
+            android:id="@+id/book_editdesc"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_alignBottom="@+id/book_img"
+            android:layout_below="@+id/book_t1"
+            android:layout_marginBottom="10dp"
+            android:layout_toRightOf="@+id/book_img"
+            android:background="@drawable/rectangle_for_edittext"
+            android:hint="Enter book Description"
+            android:inputType="textMultiLine"
+            android:padding="15dp" />
+
+        <TextView
+            android:id="@+id/book_t2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/book_img"
+            android:layout_below="@+id/book_img"
+            android:layout_marginLeft="10dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp"
+            android:text="Book Name" />
+
+        <EditText
+            android:id="@+id/book_editname"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/book_t2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/rectangle_for_edittext"
+            android:hint="eg: Mathematics for Engineers"
+            android:inputType="text"
+            android:padding="15dp" />
+
+        <TextView
+            android:id="@+id/book_t3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/book_img"
+            android:layout_below="@+id/book_editname"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp"
+            android:text="Author" />
+
+        <EditText
+            android:id="@+id/book_editauthor"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/book_t3"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/rectangle_for_edittext"
+            android:hint="eg: Kumbhojkar"
+            android:inputType="textPersonName"
+            android:padding="15dp" />
+
+        <TextView
+            android:id="@+id/book_t4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/book_img"
+            android:layout_below="@+id/book_editauthor"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp"
+            android:text="Subject" />
+
+        <EditText
+            android:id="@+id/book_editsub"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/book_t4"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/rectangle_for_edittext"
+            android:hint="eg: MAC"
+            android:inputType="text"
+            android:padding="15dp" />
+
+        <TextView
+            android:id="@+id/book_t5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/book_img"
+            android:layout_below="@+id/book_editsub"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp"
+            android:text="Edition" />
+
+        <EditText
+            android:id="@+id/book_editedi"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/book_t5"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/rectangle_for_edittext"
+            android:hint="eg: 4"
+            android:inputType="number"
+            android:padding="15dp" />
+
+        <TextView
+            android:id="@+id/book_t6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/book_img"
+            android:layout_below="@+id/book_editedi"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp"
+            android:text="Price" />
+
+        <EditText
+            android:id="@+id/book_editprice"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/book_t6"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/rectangle_for_edittext"
+            android:hint="eg: 400"
+            android:inputType="number"
+            android:padding="15dp" />
+
+        <TextView
+            android:id="@+id/book_t7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/book_img"
+            android:layout_below="@+id/book_editprice"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp"
+            android:text="Book Condition" />
+
+        <Spinner
+            android:id="@+id/book_spincond"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/book_t7"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/rectangle_for_edittext"
+            android:padding="15dp">
+
+        </Spinner>
+        <TextView
+            android:id="@+id/book_t8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/book_editprice"
+            android:layout_toRightOf="@+id/book_t7"
+            android:layout_alignRight="@+id/book_editprice"
+            android:gravity="right"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp"
+            android:text="Book Used for Semester" />
+
+        <Spinner
+            android:id="@+id/book_spinsem"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/book_t8"
+            android:layout_alignRight="@+id/book_editprice"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/rectangle_for_edittext"
+            android:padding="15dp">
+
+        </Spinner>
+
+        <Button
+            android:id="@+id/addbook"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/book_spincond"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/button_style"
+            android:text="ADD Book"
+            android:textColor="@color/White" />
+
+
+    </RelativeLayout>
+
+</ScrollView>

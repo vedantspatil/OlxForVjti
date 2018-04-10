@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.example.vedan.olxforvjti.Main2Activity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="15dp">
+        <ImageView
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:id="@+id/signup_imageView"
+            android:clickable="true"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginRight="7dp"
+            android:src="@drawable/ic_person_add_yellow_24dp"/>
+
+        <TextView
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:padding="5dp"
+            android:text="SIGN UP"
+            android:textSize="20dp"
+            android:textColor="@color/White"
+            />
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimary">
+            <EditText
+            android:id="@+id/signup_name"
+            android:backgroundTint="@color/White"
+            android:textColorHint="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_person_white_24dp"
+            android:drawablePadding="8dp"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"
+            android:inputType="textPersonName"
+            android:hint="Name"
+            />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimary">
+
+            <EditText
+            android:id="@+id/signup_email"
+                android:backgroundTint="@color/White"
+                android:textColorHint="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_email_white_24dp"
+            android:drawablePadding="8dp"
+            android:layout_marginTop="5dp"
+            android:textSize="15sp"
+            android:inputType="textEmailAddress"
+            android:hint="Email Address"
+            
+            />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimary">
+        <EditText
+            android:id="@+id/signup_password"
+            android:backgroundTint="@color/White"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/colorPrimary"
+            android:drawableStart="@drawable/ic_lock_white_24dp"
+            android:drawableLeft="@drawable/ic_lock_white_24dp"
+            android:drawablePadding="8dp"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"
+            android:inputType="textPassword"
+            android:hint="Password"
+            />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimary">
+
+            <EditText
+            android:id="@+id/signup_phone"
+                android:backgroundTint="@color/White"
+                android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/colorPrimary"
+            android:drawableLeft="@drawable/ic_local_phone_white_24dp"
+            android:drawablePadding="8dp"
+            android:textSize="15sp"
+            android:layout_marginTop="4dp"
+            android:inputType="phone"
+            android:hint="Phone Number"
+            />
+        </android.support.design.widget.TextInputLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start">
+            <TextView
+                android:id="@+id/signup_branch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Branch :"
+                android:layout_margin="8dp"
+                android:layout_alignParentLeft="true"
+                android:drawablePadding="8dp"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
+                android:drawableLeft="@drawable/ic_content_paste_white_24dp" />
+            <Spinner
+                android:id="@+id/spinner_branch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/signup_branch"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                >
+            </Spinner>
+            <TextView
+                android:id="@+id/signup_year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Year :"
+                android:layout_below="@+id/spinner_branch"
+                android:layout_margin="8dp"
+                android:layout_alignParentLeft="true"
+                android:drawablePadding="8dp"
+                android:textSize="18sp"
+                android:paddingTop="2dp"
+                android:drawableLeft="@drawable/ic_date_range_white_24dp" />
+            <Spinner
+                android:id="@+id/spinner_year"
+                android:layout_alignRight="@id/spinner_branch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/signup_year"
+                android:layout_below="@+id/spinner_branch"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="10dp">
+            </Spinner>
+        </RelativeLayout>
+        <Button
+            android:id="@+id/signup"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="SIGN-UP"
+            android:gravity="center"
+            android:background="@drawable/blue_button"
+            android:layout_marginTop="15dp"
+            android:padding="15dp"
+            android:textStyle="bold"
+            android:textColor="@color/Black"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:gravity="center"
+            >
+            <TextView
+                android:id="@+id/signup_textView"
+                android:textColor="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Already a user?">
+
+            </TextView>
+            <TextView
+                android:id="@+id/signupToLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:text="Login"
+                android:textColor="@color/Red"
+                android:textStyle="italic"
+                android:layout_toRightOf="@+id/signup_textView"
+                />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

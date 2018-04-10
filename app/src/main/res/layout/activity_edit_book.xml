@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.vedan.olxforvjti.NewBookActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:gravity="start"
+        android:paddingRight="10dp">
+
+        <ImageView
+            android:clickable="true"
+            android:id="@+id/editbook_img"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:src="@drawable/bookimagenotavailable"
+            android:adjustViewBounds="true"/>
+
+        <TextView
+            android:id="@+id/editbook_t1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/editbook_img"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@+id/editbook_img"
+            android:text="Book Deskcription" />
+
+        <EditText
+            android:id="@+id/editbook_editdesc"
+            android:layout_width="match_parent"
+            android:backgroundTint="#CAC531"
+            android:layout_height="0dp"
+            android:layout_alignBottom="@+id/editbook_img"
+            android:layout_below="@+id/editbook_t1"
+            android:layout_marginBottom="10dp"
+            android:layout_toRightOf="@+id/editbook_img"
+            android:background="@drawable/rectangle_for_editbook"
+            android:hint="Enter book Description"
+            android:inputType="textMultiLine"
+            android:padding="15dp" />
+
+        <TextView
+            android:id="@+id/editbook_t2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editbook_img"
+            android:layout_below="@+id/editbook_img"
+            android:layout_marginLeft="10dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp"
+            android:text="Book Name" />
+
+        <EditText
+            android:id="@+id/editbook_editname"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:backgroundTint="#CAC531"
+            android:layout_below="@+id/editbook_t2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/rectangle_for_editbook"
+            android:hint="eg: Mathematics for Engineers"
+            android:inputType="text"
+            android:padding="15dp" />
+
+        <TextView
+            android:id="@+id/editbook_t3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editbook_img"
+            android:layout_below="@+id/editbook_editname"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp"
+            android:text="Author" />
+
+        <EditText
+            android:id="@+id/editbook_editauthor"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/editbook_t3"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/rectangle_for_editbook"
+            android:hint="eg: Kumbhojkar"
+            android:inputType="textPersonName"
+            android:padding="15dp" />
+
+        <TextView
+            android:id="@+id/editbook_t4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editbook_img"
+            android:layout_below="@+id/editbook_editauthor"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp"
+            android:text="Subject" />
+
+        <EditText
+            android:id="@+id/editbook_editsub"
+            android:layout_width="match_parent"
+            android:backgroundTint="#CAC531"
+            android:layout_height="50dp"
+            android:layout_below="@+id/editbook_t4"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/rectangle_for_editbook"
+            android:hint="eg: MAC"
+            android:inputType="text"
+            android:padding="15dp" />
+
+        <TextView
+            android:id="@+id/editbook_t5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editbook_img"
+            android:layout_below="@+id/editbook_editsub"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp"
+            android:text="Edition" />
+
+        <EditText
+            android:id="@+id/editbook_editedi"
+            android:layout_width="match_parent"
+            android:backgroundTint="#CAC531"
+            android:layout_height="50dp"
+            android:layout_below="@+id/editbook_t5"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/rectangle_for_editbook"
+            android:hint="eg: 4"
+            android:inputType="number"
+            android:padding="15dp" />
+
+        <TextView
+            android:id="@+id/editbook_t6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editbook_img"
+            android:layout_below="@+id/editbook_editedi"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp"
+            android:text="Price" />
+
+        <EditText
+            android:id="@+id/editbook_editprice"
+            android:backgroundTint="#CAC531"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/editbook_t6"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/rectangle_for_editbook"
+            android:hint="eg: 400"
+            android:inputType="number"
+            android:padding="15dp" />
+
+        <TextView
+            android:id="@+id/editbook_t7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editbook_img"
+            android:layout_below="@+id/editbook_editprice"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp"
+            android:text="Book Condition" />
+
+        <Spinner
+            android:id="@+id/editbook_spincond"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/editbook_t7"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/rectangle_for_editbook"
+            android:padding="15dp">
+
+        </Spinner>
+        <TextView
+            android:id="@+id/editbook_t8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editbook_editprice"
+            android:layout_toRightOf="@+id/editbook_t7"
+            android:layout_alignRight="@+id/editbook_editprice"
+            android:gravity="right"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp"
+            android:text="Book Used for Semester" />
+
+        <Spinner
+            android:id="@+id/editbook_spinsem"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/editbook_t8"
+            android:layout_alignRight="@+id/editbook_editprice"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/rectangle_for_editbook"
+            android:padding="15dp">
+
+        </Spinner>
+
+        <Button
+            android:id="@+id/editsavebook"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editbook_spincond"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/button_style1"
+            android:text="Save Book details"
+            android:textColor="@color/Black" />
+        <Button
+            android:id="@+id/deletebook"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editsavebook"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/button_style1"
+            android:text="Delete Book"
+            android:textColor="@color/Black" />
+
+
+
+    </RelativeLayout>
+
+</ScrollView>

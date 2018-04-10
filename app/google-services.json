@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "981212834064",
+    "firebase_url": "https://olxforvjti.firebaseio.com",
+    "project_id": "olxforvjti",
+    "storage_bucket": "olxforvjti.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:981212834064:android:dee222d4736f0e24",
+        "android_client_info": {
+          "package_name": "com.example.vedan.olxforvjti"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "981212834064-mk2p1l45dsmhj5r3m43rdr408md3foib.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.vedan.olxforvjti",
+            "certificate_hash": "923d67500a3050bb06392e284cc900ba6fce0b05"
+          }
+        },
+        {
+          "client_id": "981212834064-6h6odkue6f0e5oc2s21ubgebsc89tbma.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAeNrh8MflInzwLTkwoN_jkjtLugEeq_wk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "981212834064-6h6odkue6f0e5oc2s21ubgebsc89tbma.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/ic_person_black_24dp"
+        android:title="Profile"
+     />
+    <item
+        android:id="@+id/nav_MyBooks"
+        android:icon="@drawable/ic_book_black_24dp"
+        android:title="My Books"
+     />
+    <item
+        android:id="@+id/nav_addbook"
+        android:icon="@drawable/ic_note_add_black_24dp"
+        android:title="Add Book"
+        />
+    <item
+        android:id="@+id/nav_logout"
+        android:icon="@drawable/ic_power_settings_new_black_24dp"
+        android:title="Logout"/>
+
+</menu>

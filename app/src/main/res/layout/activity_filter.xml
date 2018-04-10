@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundgreen2"
+    tools:context="com.example.vedan.olxforvjti.FilterActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_gravity="top"
+        >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="FILTER RESULTS"
+        android:textStyle="bold"
+        android:textColor="@color/White"
+        android:textSize="25sp"
+        android:layout_marginBottom="40dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/White"
+        android:text="Avoid case sensitivity by using first letter capital !"
+        android:textSize="13sp"
+        android:layout_marginBottom="20dp"/>
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/filter_priceview"
+        android:text="Maximum Price Range"
+        android:layout_marginLeft="10dp"
+        />
+    <SeekBar
+        android:layout_marginTop="10dp"
+        android:id="@+id/filter_seekbar"
+        android:layout_width="match_parent"
+        android:thumbTint="#00b09b"
+        android:progressTint="#00b09b"
+        android:layout_height="wrap_content"
+        android:min="0"
+        android:max="10000"
+        />
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="18dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Book Name "
+            android:id="@+id/text1"
+            />
+        <EditText
+            android:textSize="13sp"
+            android:hint="eg: Mathematics of Engineers"
+            android:layout_marginTop="10dp"
+            android:id="@+id/filter_bookname"
+            android:layout_width="match_parent"
+            android:backgroundTint="#00b09b"
+            android:layout_height="35dp"
+            />
+        <TextView
+            android:textSize="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Author "
+            android:id="@+id/text2"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/text1"
+            />
+
+        <EditText
+            android:textSize="13sp"
+            android:hint="eg Kumbhojkar"
+            android:backgroundTint="#00b09b"
+            android:id="@+id/filter_authorname"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            />
+       <LinearLayout
+           android:orientation="horizontal"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content">
+
+        <TextView
+            android:textSize="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text2"
+            android:layout_marginTop="10dp"
+            android:id="@+id/text3"
+            android:text="Semester: "/>
+        <EditText
+            android:id="@+id/filter_sem"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/text3"
+            android:layout_marginTop="6dp"
+            android:backgroundTint="#00b09b"
+            android:layout_marginLeft="10dp"
+            android:hint="eg: IV"
+            android:textSize="13sp"
+            android:layout_alignBottom="@id/text3">
+
+        </EditText>
+       </LinearLayout>
+    </LinearLayout>
+    <Button
+        android:background="@drawable/button_green2"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Apply filter"
+        android:id="@+id/filter_button"
+
+        />
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

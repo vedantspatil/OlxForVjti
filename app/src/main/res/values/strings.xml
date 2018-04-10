@@ -1,0 +1,45 @@
+<resources>
+
+    <string name="app_name">VJ Books</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string-array name="branches">
+        <item>Computer</item>
+        <item>IT</item>
+        <item>EXTC</item>
+        <item>Electronics</item>
+        <item>Civil</item>
+        <item>Mechanical</item>
+        <item>Production</item>
+        <item>Textile</item>
+        <item>Electrical</item>
+    </string-array>
+    <string-array name="booksemester">
+        <item>I</item>
+        <item>II</item>
+        <item>III</item>
+        <item>IV</item>
+        <item>V</item>
+        <item>VI</item>
+        <item>VII</item>
+        <item>VIII</item>
+    </string-array>
+    <string-array name="Year">
+        <item>First</item>
+        <item>Second</item>
+        <item>Third</item>
+        <item>Fourth</item>
+    </string-array>
+    <string-array name="bookcondition">
+        <item>New</item>
+        <item>Used</item>
+    </string-array>
+    <string name="title_activity_home">Home</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="managebooks">Manage Books</string>
+
+</resources>

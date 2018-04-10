@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundgrey"
+    tools:context="com.example.vedan.olxforvjti.AboutBookActivity">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:padding="10dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="1dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:id="@+id/image_book"
+                android:src="@drawable/noimageavailable"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:padding="5dp"
+                android:scaleType="centerCrop"
+                />
+            <TextView
+                android:id="@+id/name_book"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BOOK NAME"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_marginTop="3dp"/>
+            <TextView
+                android:id="@+id/author_book"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Author Name"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_marginTop="3dp"/>
+            <TextView
+                android:id="@+id/semester_book"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SEMESTER"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_marginTop="3dp"/>
+            <TextView
+                android:id="@+id/subject_book"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:text="Subject Name"/>
+            <TextView
+                android:id="@+id/edition_book"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:text="Edition"/>
+
+            <TextView
+                android:inputType="textMultiLine"
+                android:id="@+id/desc_book"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:layout_marginTop="10dp"
+                android:text="Description"
+                />
+            <TextView
+                android:id="@+id/condition_book"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:layout_marginTop="10dp"
+                android:text="Condition"
+                />
+            <TextView
+                android:id="@+id/price_book"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:layout_marginRight="5dp"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="PRICE"
+                android:textStyle="bold"
+                android:drawableLeft="@drawable/ic_rupee_indian"
+                />
+            <Button
+                android:id="@+id/contact_seller"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contact Seller"
+                android:background="@drawable/button_2"
+                />
+        </LinearLayout>
+
+
+
+    </android.support.v4.widget.NestedScrollView>
+</ScrollView>

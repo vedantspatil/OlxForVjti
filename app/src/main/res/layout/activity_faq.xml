@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/black_border"
+    android:layout_margin="10dp"
+    tools:context="com.example.vedan.olxforvjti.FaqActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:textSize="17sp"
+            android:text="FREQUENTLY ASKED QUESTIONS !" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:layout_marginTop="20dp"
+            android:text="How many Books can i upload?"
+            android:textSize="15dp"/>
+        <TextView
+            android:id="@+id/ans1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:text="-> Any NumberUser can upload any number of books as there
+     is no such restrictions as long as they are
+     valid. Any kind of spamming will be removed."/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:layout_marginTop="20dp"
+            android:text="How will i know if the book is not already sold?"/>
+        <TextView
+            android:id="@+id/ans2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:text="-> Once a book is sold the seller will manually
+     remove the book so no book that is no longer
+     available will be available is shown to you."/>
+
+
+    </LinearLayout>
+</ScrollView>

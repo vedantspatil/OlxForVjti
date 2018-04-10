@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.vedan.olxforvjti.AboutUsActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="VJ BOOKS"
+            android:textColor="@color/Black"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:text="Version 1.0.0"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Build 16.0.202034.0"
+            android:gravity="center"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:drawableLeft="@drawable/ic_copyright_black_24dp"
+            android:textSize="17sp"
+            android:textColor="@color/Black"
+            android:layout_marginLeft="10dp"
+            android:text="2018-2019,Vj Books,Inc.or its affiliates"
+            />
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textColor="@color/Black"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Developers - Vedant Patil &amp; Bhavik Dhodi"
+                />
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:textSize="16dp"
+            android:textColor="@color/Black"
+            android:gravity="center"
+            android:text="Contact us - Vedantpatil6@gmail.com / bhavikdhodi@gmail.com "/>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
