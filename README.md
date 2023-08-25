@@ -8,6 +8,8 @@ The following pages best describe a user's journey through the application.
 
 ## SIGNUP & LOGIN
 Sign up for the application. Account management and User Authentication are handled in Firebase.
+![Screenshot_2023-08-24-19-33-49-66_eb992a4dba6606b82109291ae2f2daeb](https://github.com/vedantspatil/OlxForVjti/assets/37808420/2d6325cf-64da-4598-ba9a-f8024f0d3d0f)
+
 
 ## HOME TAB
 The Android recycler view displays all the books available for sale in the application. Users can navigate and select the book of their choice. 
